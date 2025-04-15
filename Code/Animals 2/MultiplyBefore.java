@@ -1,0 +1,10 @@
+public class MultiplyBefore extends Animal {
+    public MultiplyBefore(int count, int foodRequired, int offspring) {
+        super(count, foodRequired, offspring);
+    }
+    
+    @Override
+    public void reproduce() {
+        count += count * offspring;
+    }
+}
